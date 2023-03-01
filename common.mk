@@ -253,7 +253,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libcodec2_hidl@1.0.vendor
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_vndk.vendor
 
 # Net
 PRODUCT_PACKAGES += \
@@ -282,12 +283,7 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    libOmxAacEnc \
-    libOmxAmrEnc \
     libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
     libstagefrighthw
 
 # Overlays
