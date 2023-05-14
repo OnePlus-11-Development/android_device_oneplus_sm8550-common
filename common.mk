@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl \
+    android.hardware.audio@7.1-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
@@ -82,7 +82,7 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
@@ -99,8 +99,9 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64 \
+    android.hardware.camera.provider-V1-ndk.vendor \
+    android.hardware.camera.provider@2.7.vendor \
+    vendor.qti.hardware.camera.aon@1.3.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_COPY_FILES += \
@@ -153,7 +154,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey
 
 # Enforce generic ramdisk allow list
@@ -238,6 +239,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
     libkeymaster_messages.vendor
+
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V1-ndk.vendor \
+    android.hardware.security.secureclock-V1-ndk.vendor \
+    android.hardware.security.sharedsecret-V1-ndk.vendor
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -333,15 +340,15 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     libprotobuf-cpp-full \
     librmnetctl
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal \
+    android.hardware.sensors@2.1-service.multihal \
     libsensorndkbridge \
     sensors.oplus
 
@@ -403,7 +410,7 @@ PRODUCT_COPY_FILES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.qti
+    android.hardware.thermal@2.0-service.qti-v2
 
 # Touch
 PRODUCT_PACKAGES += \
