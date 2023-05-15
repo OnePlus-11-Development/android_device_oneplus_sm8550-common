@@ -28,7 +28,6 @@ vendor.audio.feature.incall_music.enable=true
 vendor.audio.feature.keep_alive.enable=true
 vendor.audio.feature.kpi_optimize.enable=true
 vendor.audio.feature.multi_voice_session.enable=true
-vendor.audio.feature.power_mode.enable=true
 vendor.audio.feature.ras.enable=true
 vendor.audio.feature.snd_mon.enable=true
 vendor.audio.feature.spkr_prot.enable=true
@@ -38,6 +37,7 @@ vendor.audio.feature.usb_offload.enable=true
 vendor.audio.feature.usb_offload_burst_mode.enable=true
 vendor.audio.feature.vbat.enable=true
 vendor.audio.flac.sw.decoder.24bit=true
+ro.audio.flinger_standbytime_ms=2000
 vendor.audio.hal.boot.timeout.ms=20000
 vendor.audio.hal.output.suspend.supported=true
 vendor.audio.hw.aac.encoder=true
@@ -48,6 +48,7 @@ vendor.audio.spkr_prot.tx.sampling_rate=48000
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.use.sw.mpegh.decoder=true
+vendor.audio.ull_record_period_multiplier=2
 vendor.audio.volume.headset.gain.depcal=true
 vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
@@ -82,16 +83,16 @@ persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
 ro.bluetooth.a2dp_offload.supported=true
 
-# Chipset
-ro.soc.manufacturer=Qualcomm
-
-# Crypto
-ro.crypto.dm_default_key.options_format.version=2
-ro.crypto.volume.metadata.method=dm-default-key
+# Camera
+ro.camera.enableCamera1MaxZsl=1
 
 # DPM
-persist.vendor.dpm.idletimer.mode=default
-persist.vendor.dpmhalservice.enable=1
+persist.vendor.dpm.vndr.idletimer.mode=default
+persist.vendor.dpm.vndr.halservice.enable=1
+persist.vendor.dpm.vndr.feature=11
+
+# DRM
+drm.service.enabled=true
 
 # Display
 vendor.display.comp_mask=0
@@ -107,6 +108,9 @@ drm.service.enabled=true
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Fuse
+persist.sys.fuse.passthrough.enable=true
 
 # Gatekeeper
 vendor.gatekeeper.disable_spu=true
@@ -136,14 +140,18 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.incremental.enable=yes
 
 # Media
-debug.stagefright.ccodec=4
-debug.stagefright.omx_default_rank=0
+debug.stagefright.c2inputsurface=-1
+ro.mediaserver.64b.enable=true
 
 # Netflix
-ro.netflix.bsp_rev=Q875-32408-1
+ro.netflix.bsp_rev=Q8550-36432-1
 
-# Perf
+# RCS
+persist.vendor.rcs.singlereg.feature=1
+
+# Performance
 ro.vendor.extension_library=libqti-perfd-client.so
+vendor.perf.framepacing.enable=1
 
 # QTEE
 persist.vendor.qteeconnector.retrying_interval=30
@@ -151,15 +159,16 @@ persist.vendor.qteeconnector.retrying_timeout=2000
 
 # Radio
 persist.radio.multisim.config=dsds
+persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.enableadvancedscan=true
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
+persist.vendor.radio.sib16_support=1
 ro.telephony.default_network=33,33
 
-# Sensors
-persist.vendor.sensors.allow_non_default_discovery=true
-persist.vendor.sensors.on_change_sample_period=true
-persist.vendor.sensors.sync_request=true
+# SoC
+ro.soc.manufacturer=QTI
 
 # USB
 sys.usb.mtp.batchcancel=1
