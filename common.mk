@@ -59,8 +59,7 @@ PRODUCT_PACKAGES += \
     libsndcardparser \
     libtinycompress \
     libvolumelistener \
-    sound_trigger.primary.kalama \
-    vendor.qti.hardware.pal@1.0-impl
+    sound_trigger.primary.kalama
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8550/audio
 

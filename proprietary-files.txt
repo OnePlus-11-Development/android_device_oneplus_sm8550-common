@@ -220,6 +220,8 @@ vendor/lib64/libqtigefar.so
 vendor/lib64/libtfa98xx.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
+vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.pal@1.0.so
 
 # Audio AGM
 vendor/bin/agmcap
