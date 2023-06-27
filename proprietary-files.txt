@@ -264,6 +264,8 @@ vendor/lib64/lib_bt_ble.so
 vendor/lib64/lib_bt_bundle.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
+vendor/lib64/libPeripheralStateUtils.so
+vendor/lib64/vendor.oplus.hardware.stability.oplus_project@1.0.so
 vendor/lib64/vendor.qti.hardware.bttpi-V2-ndk.so
 
 # Bluetooth (A2DP)
@@ -1494,9 +1496,11 @@ vendor/lib64/libqdcm-algo.so
 vendor/lib64/libqdcm-mode-parser.so
 vendor/lib64/libqdutils.so
 vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmdal.so
 vendor/lib64/libsdmutils.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
+vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Display (Pixelworks)
@@ -1669,7 +1673,10 @@ odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
 odm/bin/init.oplus.fingerprints.sh
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
+odm/lib64/libolc_vnd.so
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
+odm/lib64/vendor.oplus.hardware.olc@2.0.so
+odm/lib64/vendor.oplus.hardware.touch@1.0.so
 
 # Fingerprint firmware
 odm/vendor/firmware/uff_gx.b00
@@ -1720,6 +1727,7 @@ vendor/lib/libkcl.so
 vendor/lib/libkernelmanager.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
+vendor/lib/libllvm-qgl.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
@@ -1737,6 +1745,7 @@ vendor/lib64/libkcl.so
 vendor/lib64/libkernelmanager.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
+vendor/lib64/libllvm-qgl.so
 
 # Graphics (Adreno firmware)
 vendor/firmware/a740_sqe.fw
@@ -1821,7 +1830,6 @@ vendor/lib64/liblocdiagiface.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libpal_net_if.so
-vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libslimclient.so
 vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libsys_info_cache.so
@@ -1830,8 +1838,6 @@ vendor/lib64/libxtwifi_server_protocol.so
 vendor/lib64/libxtwifi_server_protocol_uri_v3.so
 vendor/lib64/vendor.qti.gnss-V2-ndk.so
 vendor/lib64/vendor.qti.gnss-service.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 
 # Health
 vendor/bin/hw/android.hardware.health-service.qti
@@ -1930,6 +1936,7 @@ vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qcom.class_core.sh
 vendor/bin/init.qcom.post_boot.sh
 vendor/bin/init.qti.kernel.sh
+vendor/bin/system_dlkm_modprobe.sh
 vendor/bin/vendor_modprobe.sh
 vendor/etc/init/hw/init.qti.kernel.rc
 
@@ -2198,7 +2205,14 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # QCC
+vendor/bin/qcc-vendor
+vendor/etc/init/init.qccvendor.rc
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
+vendor/lib64/libqcc_file_agent.so
+vendor/lib64/libqcc_sdk.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 
@@ -2466,6 +2480,7 @@ vendor/lib64/libsns_direct_channel_stub.so
 vendor/lib64/libsns_registry_skel.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
+vendor/lib64/libsnsutils.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
@@ -2613,6 +2628,7 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/bin/trusteduilistener
 vendor/etc/init/trusteduilistener.rc
 vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc
+vendor/lib64/android.hidl.memory.block@1.0.so
 vendor/lib64/libTouchInputVM.so
 vendor/lib64/libTrustedInput.so
 vendor/lib64/libTrustedInputTZ.so
@@ -2624,6 +2640,7 @@ vendor/lib64/libcpion.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsi.so
 vendor/lib64/libtrustedapploader.so
+vendor/lib64/vendor.qti.hardware.systemhelper@1.0.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.0.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.1.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.2.so

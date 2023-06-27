@@ -238,6 +238,9 @@ PRODUCT_PACKAGES += \
     ueventd.oplus.rc \
     ueventd.qcom.rc
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/system_dlkm.modules.blocklist:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
