@@ -47,7 +47,7 @@ vendor/lib64/libloadalgo_stub.so
 # ADSP modules
 odm/lib/rfsa/adsp/aiboost/libQnnHtpV73Skel.so
 odm/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so
-odm/lib/rfsa/adsp/capi_v3_oprec.so
+odm/lib/rfsa/adsp/capi_v3_oprec.so:vendor/lib/rfsa/adsp/capi_v3_oprec.so
 odm/lib/rfsa/adsp/libCalculator_skel.so
 odm/lib/rfsa/adsp/libQnnHtpV73.so
 odm/lib/rfsa/adsp/libQnnHtpV73Skel.so
@@ -65,17 +65,17 @@ odm/lib/rfsa/adsp/libc++abi.so.1
 odm/lib/rfsa/adsp/libcalculator_skel.so
 odm/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so
 odm/lib/rfsa/adsp/libktvdrc.so
-odm/lib/rfsa/adsp/libktveffect.so
+odm/lib/rfsa/adsp/libktveffect.so:vendor/lib/rfsa/adsp/libktveffect.so
 odm/lib/rfsa/adsp/libktveq.so
 odm/lib/rfsa/adsp/libktvns.so
 odm/lib/rfsa/adsp/libktvpitchshift.so
 odm/lib/rfsa/adsp/libktvreverb.so
 odm/lib/rfsa/adsp/libktvvolume.so
-odm/lib/rfsa/adsp/libtfadsp_sb4_0_rx.so
-odm/lib/rfsa/adsp/libtfadsp_sb4_0_tx.so
+odm/lib/rfsa/adsp/libtfadsp_sb4_0_rx.so:vendor/lib/rfsa/adsp/libtfadsp_sb4_0_rx.so
+odm/lib/rfsa/adsp/libtfadsp_sb4_0_tx.so:vendor/lib/rfsa/adsp/libtfadsp_sb4_0_tx.so
 odm/lib/rfsa/adsp/libvdblurless_5.0.2_skel.so
 odm/lib/rfsa/adsp/libvdsuperphoto_skel.so
-odm/lib/rfsa/adsp/nlc.so
+odm/lib/rfsa/adsp/nlc.so:vendor/lib/rfsa/adsp/nlc.so
 vendor/lib/rfsa/adsp/bm3a68v08s11n29.bin
 vendor/lib/rfsa/adsp/bm3a68v08s11n30.bin
 vendor/lib/rfsa/adsp/bm3a68v08s11n35.bin
