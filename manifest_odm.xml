@@ -42,4 +42,10 @@
             <instance>oplus_slot2</instance>
         </interface>
     </hal>
+    <!--hal format="aidl">
+        <name>vendor.oplus.hardware.subsys_interface.subsys_radio</name>
+        <version>1</version>
+        <fqname>ISubsysRadio/slot1</fqname>
+        <fqname>ISubsysRadio/slot2</fqname>
+    </hal-->
 </manifest>

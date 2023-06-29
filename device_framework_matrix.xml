@@ -8,6 +8,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.display.PanelChaplin</name>
+        <version>1.0</version>
+        <interface>
+            <name>IPanelChaplin</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.appradio</name>
         <version>1.0</version>
         <interface>
