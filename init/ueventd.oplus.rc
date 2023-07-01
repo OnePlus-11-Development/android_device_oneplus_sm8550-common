@@ -7,6 +7,9 @@
 subsystem adf
     devname uevent_devname
 
+# Camera
+/dev/explorer_preisp                           0660    cameraserver    camera
+
 # Display
 firmware_directories /mnt/vendor/persist/display/
 

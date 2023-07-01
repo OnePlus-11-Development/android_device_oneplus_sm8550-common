@@ -312,8 +312,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Camera
-#vendor/bin/hw/vendor.qti.camera.provider-service_64
-#vendor/etc/init/vendor.qti.camera.provider-service_64.rc
 odm/etc/camera/AiFace.json
 odm/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode
 odm/etc/camera/anc/fusion_model
@@ -1116,6 +1114,8 @@ odm/lib64/libwatermark_photo.so
 odm/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so
 odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
+vendor/bin/hw/vendor.qti.camera.provider-service_64
+vendor/etc/init/vendor.qti.camera.provider-service_64.rc
 vendor/etc/vintf/manifest/vendor.qti.camera.aon-impl-1.3.xml
 vendor/etc/vintf/manifest/vendor.qti.camera.postproc-impl.xml
 vendor/etc/vintf/manifest/vendor.qti.camera.provider.xml
@@ -1441,6 +1441,7 @@ vendor/bin/ssgqmigd64
 vendor/bin/ssgtzd
 vendor/etc/init/qwesd.rc
 vendor/etc/init/ssgtzd.rc
+vendor/etc/seccomp_policy/qwesd@2.0.policy
 
 # Data
 vendor/bin/ATFWD-daemon
@@ -2138,6 +2139,9 @@ odm/lib64/libosensehalclient.so
 odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
 
 # OPLUS Performance
+odm/bin/hw/vendor.oplus.hardware.performance@1.0-service
+odm/etc/init/vendor.oplus.hardware.performance@1.0-service.rc
+odm/etc/vintf/manifest/manifest_oplus_performance.xml
 odm/lib/vendor.oplus.hardware.performance@1.0.so
 odm/lib64/vendor.oplus.hardware.performance@1.0.so
 
