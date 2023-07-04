@@ -177,8 +177,8 @@ vendor/lib/rfsa/adsp/tests/test_elf_size_768k.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
-odm/lib/lib_lvacfs.so
-odm/lib/liblvacfs_wrapper.so
+odm/lib64/lib_lvacfs.so
+odm/lib64/liblvacfs_wrapper.so
 vendor/etc/microphone_characteristics.xml
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
