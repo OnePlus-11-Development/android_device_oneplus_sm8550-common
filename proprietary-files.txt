@@ -39,8 +39,8 @@ vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd
 # ADSP
 vendor/bin/adsprpcd
 vendor/bin/loadalgo
-vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
+vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libloadalgo_stub.so
@@ -222,6 +222,7 @@ vendor/lib64/libar-gpr.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
+vendor/lib64/libcapiv2udk7vendor.so
 vendor/lib64/libcapiv2uvvendor.so
 vendor/lib64/libdsd2pcm.so
 vendor/lib64/libeai_fixed.so
@@ -313,6 +314,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Camera
+odm/bin/occe_create
 odm/etc/camera/AiFace.json
 odm/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode
 odm/etc/camera/anc/fusion_model
@@ -981,10 +983,10 @@ odm/etc/camera/tonemap/tonemap_lut_7
 odm/etc/camera/tonemap/tonemap_lut_8
 odm/etc/camera/tonemap/tonemap_lut_9
 odm/etc/camera/wide.bin
+odm/etc/init/init.camera_upate.rc
 odm/etc/init/init.odm.camera.provider.override.rc
+odm/etc/init/occe_create.rc
 odm/etc/vintf/manifest/manifest_oplus_cameraextension.xml
-odm/lib/libDeVIS.so
-odm/lib/libc++_shared.so
 odm/lib/vendor.oplus.hardware.extcamera@1.0.so
 odm/lib64/camera/com.qti.sensor.imx581.so
 odm/lib64/camera/com.qti.sensor.imx709.so
@@ -1024,26 +1026,64 @@ odm/lib64/camera/libafCustomParamWide.bin
 odm/lib64/camera/revision.txt
 odm/lib64/hw/camera.oemlayer.so
 odm/lib64/lib2DSlender.so
+odm/lib64/libAF.so
 odm/lib64/libAlgoInterface.so
 odm/lib64/libAlgoProcess.so
+odm/lib64/libAncFilter.so
+odm/lib64/libAncHumVideoBase.so
+odm/lib64/libAncHumanDoubleExposure.so
+odm/lib64/libAncHumanRetain.so
+odm/lib64/libAncHumanSegFigureFusion.so
+odm/lib64/libAncSegBaseSdk.so
+odm/lib64/libAncSegMultiSdk.so
 odm/lib64/libAncSegmentSdk.so
+odm/lib64/libBokehPre.so
 odm/lib64/libCOppLceTonemapAPI.so
+odm/lib64/libCS.so
+odm/lib64/libCaptureBokeh.so
+odm/lib64/libCipCommon.so
+odm/lib64/libCipParamProcess.so
+odm/lib64/libCipParameter0.so
+odm/lib64/libCipParameter1.so
+odm/lib64/libCipParameter2.so
+odm/lib64/libCipParameter3.so
+odm/lib64/libCipParameter4.so
+odm/lib64/libCipParameter5.so
+odm/lib64/libCipParameter6.so
+odm/lib64/libCipo_awb.so
+odm/lib64/libDeVIS.so
 odm/lib64/libEIS.so
+odm/lib64/libFDClite.so
 odm/lib64/libFaceBeautyCap.so
 odm/lib64/libFaceBeautyJni.so
 odm/lib64/libFaceBeautyPICap.so
 odm/lib64/libFaceBeautyPre.so
 odm/lib64/libFaceDistortionCorrection.so
+odm/lib64/libFilterWrapper.so
+odm/lib64/libHIS.so
 odm/lib64/libOGLManager.so
+odm/lib64/libOPAlgoCamAIBeautyBodyDetection.so
+odm/lib64/libOPAlgoCamAiBeautyEyeRetouchCn.so
+odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so
+odm/lib64/libOPAlgoCamAiUnifySkin.so
+odm/lib64/libOPAlgoCamFaceBeautyCap.so
+odm/lib64/libOPAlgoCamSinglePortrait.so
 odm/lib64/libOPLUS_SCPortrait.so
+odm/lib64/libOplusPDCore.so
+odm/lib64/libPerfectColor.so
 odm/lib64/libPerfectlyClearCruxOpt.so
+odm/lib64/libPerfectlyClearCruxOpt.so
+odm/lib64/libPlatformValidatorShared.so
 odm/lib64/libPolarrRender.so
 odm/lib64/libPreviewDecisionOld.so
+odm/lib64/libRedeyeReduce.so
 odm/lib64/libSNPE.so
 odm/lib64/libSnpeCpu.so
 odm/lib64/libSnpeGpu.so
 odm/lib64/libSnpeHtpPrepare.so
 odm/lib64/libSnpeHtpV73Stub.so
+odm/lib64/libSuperRaw.so
+odm/lib64/libSuperTextWrapper.so
 odm/lib64/libVDBayerHDR.so
 odm/lib64/libVDBlurless.so
 odm/lib64/libVDExternal.so
@@ -1052,11 +1092,25 @@ odm/lib64/libVDSuperPhotoAPI.so
 odm/lib64/libVDUpScale.so
 odm/lib64/libVideoEnhance.so
 odm/lib64/libWaterMark.so
+odm/lib64/libXDocProcessSDK.so
+odm/lib64/libYTCommon.so
 odm/lib64/lib_rectify.so
+odm/lib64/libaecCustom.so
+odm/lib64/libaecCustomParamParser.so
+odm/lib64/libafCustomParamParser.so
+odm/lib64/libaideblur.so
 odm/lib64/libaisal.so
+odm/lib64/libaisd.so
+odm/lib64/libaiseg.so
+odm/lib64/libaisr.so
+odm/lib64/libalCFR.so
+odm/lib64/libancbase_rt_fusion.so
+odm/lib64/libancbase_segbase.so
 odm/lib64/libancbase_segment.so
+odm/lib64/libancbase_segmulti.so
 odm/lib64/libapsexif.so
 odm/lib64/libapsjpeg.so
+odm/lib64/libapspng.so
 odm/lib64/libarcsoft_distortion_correction.so
 odm/lib64/libarcsoft_dual_sat.so
 odm/lib64/libarcsoft_dual_zoomtranslator.so
@@ -1091,30 +1145,53 @@ odm/lib64/libarcsoft_turbo_raw.so
 odm/lib64/libarcsoft_ultra_high_dynamic_range.so
 odm/lib64/libarcsoft_videoautozoom.so
 odm/lib64/libc++_shared.so
+odm/lib64/libcalculator.so
+odm/lib64/libcalculator_htp.so
+odm/lib64/libcreatebin.so
+odm/lib64/libcustomer_halalgovisual.so
+odm/lib64/libcvface_api.so
 odm/lib64/libdualcam_optical_zoom_control.so
 odm/lib64/libdualcam_video_optical_zoom.so
+odm/lib64/libeffect_custom.so
 odm/lib64/libextensionlayer.so
 odm/lib64/libhwconfigurationutil.so
 odm/lib64/libhyperlapse.so
+odm/lib64/libiceainr.so
+odm/lib64/libimgClarityEvaluate.so
 odm/lib64/libml_util.so
 odm/lib64/libmpbase.so
+odm/lib64/libnpu.so
+odm/lib64/liboplusblur_capture_api.so
 odm/lib64/liboptical_zoom_dc.so
 odm/lib64/liboptical_zoom_vs.so
 odm/lib64/libormshalclient.so
+odm/lib64/libpngwrapper.so
+odm/lib64/libportrait_repair_ppl3_ocl.so
+odm/lib64/libremosaic_wrapper.so
+odm/lib64/libremosaiclib_s5k3p9.so
+odm/lib64/libremosaiclib_s5kjn1.so
+odm/lib64/librmsclib1.so
+odm/lib64/libsaveshaderbin.so
+odm/lib64/libsharebuffer.so
+odm/lib64/libsharebuffer_impl.so
 odm/lib64/libsnpe_loader.so
-odm/lib64/libsnpe_loader.so
-odm/lib64/libsnpeml.so
 odm/lib64/libsnpeml.so
 odm/lib64/libstblur_api.so
 odm/lib64/libstblur_capture_api.so
+odm/lib64/libstdc++.so
 odm/lib64/libstface_fd_api.so
 odm/lib64/libstfd_mobile_api.so
 odm/lib64/libtriplecam_optical_zoom_control.so
 odm/lib64/libtriplecam_video_optical_zoom.so
+odm/lib64/libui.so
 odm/lib64/libwatermark_photo.so
+odm/lib64/libwrapper_te.so
+odm/lib64/libyuv2.so
 odm/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so
 odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
+odm/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so
 vendor/bin/hw/vendor.qti.camera.provider-service_64
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
 vendor/etc/vintf/manifest/vendor.qti.camera.aon-impl-1.3.xml
@@ -1231,6 +1308,7 @@ vendor/lib64/com.qti.settings.sm8550.so
 vendor/lib64/com.qti.stats.common.so
 vendor/lib64/com.qualcomm.mcx.distortionmapper.so
 vendor/lib64/com.qualcomm.mcx.linearmapper.so
+vendor/lib64/com.qualcomm.mcx.nonlinearmapper.so
 vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.mcx.policy.xr.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
@@ -1291,6 +1369,7 @@ vendor/lib64/libqll10.so
 vendor/lib64/libqllengine.so
 vendor/lib64/libqsegnet.so
 vendor/lib64/libqshcamera.so
+vendor/lib64/libsfeShiftExtrapolation.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
@@ -1299,6 +1378,7 @@ vendor/lib64/libubifocus.so
 vendor/lib64/libvideoml.so
 vendor/lib64/vendor.oplus.hardware.cameraextension@1.0.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
+vendor/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
@@ -1667,6 +1747,7 @@ odm/lib64/vendor.qti.esepowermanager@1.1.so
 
 # EVA
 vendor/etc/eva/facedetection/model3.dat
+vendor/lib64/libcv_common.so
 vendor/lib64/libeva.so
 vendor/lib64/libeva_util.so
 
@@ -1693,7 +1774,6 @@ vendor/firmware/evass.b18
 vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
-vendor/lib64/libcv_common.so
 
 # FASTCV
 vendor/lib64/libfastcvdsp_stub.so
@@ -2000,11 +2080,12 @@ vendor/lib64/vendor.qti.hardware.limits@1.1.so
 vendor/lib64/vendor.qti.hardware.limits@1.2.so
 
 # Media
-odm/lib/libaiboost_qnn_sr.so
-odm/lib/libaiboost_sr.so
-odm/lib/libaiboost_ubwc.so
+odm/lib/libc2ffmpegutils.so
+odm/lib/libc2filterplugin.so
 odm/lib/libosie_process.so
 odm/lib/libosie_stub.so
+odm/lib64/libc2ffmpegutils.so
+odm/lib64/libc2filterplugin.so
 system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
@@ -2116,6 +2197,10 @@ vendor/lib64/vendor.qti.hardware.factory@1.1.so
 vendor/etc/public.libraries.txt
 
 # Neural networks
+odm/lib64/aiboost/libQnnHtp.so
+odm/lib64/aiboost/libQnnHtpPrepare.so
+odm/lib64/aiboost/libQnnHtpV73Stub.so
+odm/lib64/aiboost/libQnnSystem.so
 odm/lib64/libQnnCpu.so
 odm/lib64/libQnnGpu.so
 odm/lib64/libQnnHtp.so
@@ -2123,6 +2208,12 @@ odm/lib64/libQnnHtpPrepare.so
 odm/lib64/libQnnHtpV73CalculatorStub.so
 odm/lib64/libQnnHtpV73Stub.so
 odm/lib64/libQnnSaver.so
+odm/lib64/libaiboost.so
+odm/lib64/libaiboost_hexagon.so
+odm/lib64/libaiboost_qnn_sr.so
+odm/lib64/libaiboost_sr.so
+odm/lib64/libaiboost_te.so
+odm/lib64/libaiboost_ubwc.so
 vendor/lib64/libQnnCpu.so
 vendor/lib64/libQnnHtp.so
 vendor/lib64/libQnnHtpPrepare.so
@@ -2240,6 +2331,7 @@ vendor/lib64/libqti-utils.so
 vendor/lib64/libsilkyscrolls.so
 vendor/lib64/libskewknob.so
 vendor/lib64/libsplh.so
+vendor/lib64/libstandbyfeature.so
 vendor/lib64/libvideooptfeature.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
@@ -2539,7 +2631,9 @@ vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_api.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_direct_channel_stub.so
+vendor/lib64/libsns_dynamic_loader_stub.so
 vendor/lib64/libsns_registry_skel.so
+vendor/lib64/libsns_remote_proc_state_stub.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libsnsutils.so
@@ -2679,6 +2773,7 @@ odm/firmware/tp/22811/LIMIT_S3908_SAMSUNG.img
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+vendor/lib64/libGPMTEEC_vendor.so
 vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
