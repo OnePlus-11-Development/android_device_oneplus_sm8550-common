@@ -229,12 +229,14 @@ ro.incremental.enable=yes
 debug.stagefright.c2inputsurface=-1
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
+ro.mediaserver.64b.enable=true
 
 # Netflix
 ro.netflix.bsp_rev=Q8550-36432-1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+vendor.perf.framepacing.enable=1
 
 # Radio
 persist.radio.multisim.config=dsds
