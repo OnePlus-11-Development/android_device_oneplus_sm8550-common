@@ -296,13 +296,13 @@ nt36xxx-i2c.ko
 goodix_ts.ko
 atmel_mxt_ts.ko
 dummy_ts.ko
-cnss_utils.ko
-wlan_firmware_service.ko
-cnss_plat_ipc_qmi_svc.ko
+kiwi_v2.ko
 cnss2.ko
+cnss_plat_ipc_qmi_svc.ko
+wlan_firmware_service.ko
 cnss_nl.ko
 cnss_prealloc.ko
-qca6490.ko
+cnss_utils.ko
 btpower.ko
 bt_fm_slim.ko
 radio-i2c-rtc6226-qca.ko
