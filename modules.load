@@ -86,6 +86,7 @@ oplus_bsp_mxm_up.ko
 oplus_bsp_mxm_down.ko
 oplus_bsp_tri_key.ko
 oplus_bsp_rfcablemonitor.ko
+oplus_ak09970.ko
 sim_detect.ko
 oem_qmi_client.ko
 oplus_gpio.ko
@@ -130,6 +131,9 @@ synx-driver.ko
 qcom-pon.ko
 reboot-mode.ko
 oplus_chg.ko
+ufcs_class.ko
+oplus_chg_v2.ko
+oplus_chg_symbol.ko
 qcom-spmi-temp-alarm.ko
 bcl_soc.ko
 cpu_voltage_cooling.ko
@@ -148,6 +152,7 @@ qcom_edac.ko
 qcom_lpm.ko
 leds-qti-flash.ko
 leds-qti-tri-led.ko
+leds_aw210xx.ko
 memlat_vendor.ko
 ipa_fmwk.ko
 qcom_pil_info.ko
@@ -211,8 +216,8 @@ wsa884x_dlkm.ko
 wsa883x_dlkm.ko
 wcd938x_dlkm.ko
 wcd938x_slave_dlkm.ko
-tfa98xx-v6_dlkm.ko
-audio_extend_dlkm.ko
+oplus_audio_tfa98xx_v6.ko
+oplus_audio_extend.ko
 stm_st54se_gpio.ko
 tz_log_dlkm.ko
 qcedev-mod_dlkm.ko
